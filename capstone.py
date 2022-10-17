@@ -15,6 +15,7 @@ st.write("Hidup yang menjadi lebih mudah di kemajuan teknologi ini membuat kita 
 st.write("Oleh karena itu, muncullah pertanyaan: jika prevalensi diabetes melitus di provinsi-provinsi Pulau Jawa pada 2020 dibandingkan satu sama lain dan dihubungkan dengan prevalensi TB paru, apakah angka yang didapat akan linear? Jika prevalensi DM di suatu daerah merupakan angka terbesar dibandingkan provinsi lain, apakah prevalensi TB di daerah tersebut juga mencapai angka tertinggi?")
 
 st.markdown("<h4 style='text-align: left;'>Persebaran "+map.select_data+" di Pulau Jawa</h4>", unsafe_allow_html=True)
+st.caption("(Opsi untuk memilih prevalensi TB/DM dapat dipilih di sidebar)")
 map.show_maps(map.select_data, map.threshold(map.select_data))
 
 
