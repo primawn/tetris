@@ -9,13 +9,15 @@ st.markdown("<h1 style='text-align: center'>Hubungan Prevalensi Diabetes Melitus
 st.markdown("<h5 style='text-align: center'>Prima Widiani | Tetris Program 2022</h5>", unsafe_allow_html=True)
 st.markdown("----")
 
-map.show_maps(map.select_data, map.threshold(map.select_data))
-st.markdown("<h6 style='text-align: center;'>Persebaran "+map.select_data+" di Pulau Jawa</h6>", unsafe_allow_html=True)
-
 # st.write("""Latar Belakang""")
 st.write("Diabetes melitus merupakan penyakit yang menyebabkan gangguan metabolisme kronis pada tubuh (WHO, 1999). Hal ini menyebabkan tingginya kadar gula darah, terganggunya produksi insulin dalam tubuh, dan seringkali juga memberikan peluang bagi penyakit lain untuk masuk ke tubuh kita, salah satunya adalah TBC. Tuberkulosis (TBC/TB) adalah penyakit mudah menular yang disebabkan oleh infeksi bakteri, yang pada umumnya menyerang paru-paru.")
 st.write("Hidup yang menjadi lebih mudah di kemajuan teknologi ini membuat kita seringkali menjadi lalai dalam menjaga gaya hidup dan pola makan. Menurut WHO, gaya hidup yang tidak baik tersebut merupakan salah satu pemicu diabetes melitus (Kemkes, 2018), yang mana sejauh ini penderita diabetes melitus semakin bertambah banyak.")
 st.write("Oleh karena itu, muncullah pertanyaan: jika prevalensi diabetes melitus di provinsi-provinsi Pulau Jawa pada 2020 dibandingkan satu sama lain dan dihubungkan dengan prevalensi TB paru, apakah angka yang didapat akan linear? Jika prevalensi DM di suatu daerah merupakan angka terbesar dibandingkan provinsi lain, apakah prevalensi TB di daerah tersebut juga mencapai angka tertinggi?")
+
+map.show_maps(map.select_data, map.threshold(map.select_data))
+st.markdown("<h6 style='text-align: center;'>Persebaran "+map.select_data+" di Pulau Jawa</h6>", unsafe_allow_html=True)
+
+
 
 choice_prov = st.selectbox(
     '<h5>Prevalensi Diabetes Melitus dan TBC berdasarkan Provinsi</h5>',
