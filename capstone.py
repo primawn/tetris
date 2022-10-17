@@ -23,7 +23,7 @@ title = st.markdown("<h4 style='text-align: left;'>Hubungan Prevalensi DM dan TB
 
 choice_prov = st.selectbox(
     'Data Penderita Diabetes Melitus dan TBC',
-    ('Semua Data', 'DKI Jakarta','Banten','DI Yogyakarta','Jawa Barat','Jawa Tengah','Jawa Timur'))
+    ('Per Provinsi', 'DKI Jakarta','Banten','DI Yogyakarta','Jawa Barat','Jawa Tengah','Jawa Timur','Semua Data'))
 
 if choice_prov == "Per Provinsi":
          st.table(data.datajawa)
