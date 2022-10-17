@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import data
+from bokeh.models.widgets import Div
 import map
 
 #STREAMLIT
@@ -10,8 +11,8 @@ st.markdown("<h5 style='text-align: center'>Prima Widiani | Tetris Program 2022<
 st.markdown("----")
 
 # st.write("""Latar Belakang""")
-st.write("Diabetes melitus merupakan penyakit yang menyebabkan gangguan metabolisme kronis pada tubuh (WHO, 1999). Hal ini menyebabkan tingginya kadar gula darah, terganggunya produksi insulin dalam tubuh, dan seringkali juga memberikan peluang bagi penyakit lain untuk masuk ke tubuh kita, salah satunya adalah TBC. Tuberkulosis (TBC/TB) adalah penyakit mudah menular yang disebabkan oleh infeksi bakteri, yang pada umumnya menyerang paru-paru.")
 st.write("Hidup yang menjadi lebih mudah di kemajuan teknologi ini membuat kita seringkali menjadi lalai dalam menjaga gaya hidup dan pola makan. Menurut WHO, gaya hidup yang tidak baik tersebut merupakan salah satu pemicu diabetes melitus (Kemkes, 2018), yang mana sejauh ini penderita diabetes melitus semakin bertambah banyak.")
+st.write("Diabetes melitus merupakan penyakit yang menyebabkan gangguan metabolisme kronis pada tubuh (WHO, 1999). Hal ini menyebabkan tingginya kadar gula darah, terganggunya produksi insulin dalam tubuh, dan seringkali juga memberikan peluang bagi penyakit lain untuk masuk ke tubuh kita, salah satunya adalah TBC. Tuberkulosis (TBC/TB) adalah penyakit mudah menular yang disebabkan oleh infeksi bakteri, yang pada umumnya menyerang paru-paru. Tidak menutup kemungkinan bahwa penderita DM juga dapat terserang TB karena mudahnya penyakit tersebut untuk menular dan rendahnya imunitas pada pasien DM.")
 st.write("Oleh karena itu, muncullah pertanyaan: jika prevalensi diabetes melitus di provinsi-provinsi Pulau Jawa pada 2020 dibandingkan satu sama lain dan dihubungkan dengan prevalensi TB paru, apakah angka yang didapat akan linear? Jika prevalensi DM di suatu daerah merupakan angka terbesar dibandingkan provinsi lain, apakah prevalensi TB di daerah tersebut juga mencapai angka tertinggi?")
 
 st.markdown("<h4 style='text-align: left;'>Persebaran "+map.select_data+" di Pulau Jawa</h4>", unsafe_allow_html=True)
@@ -67,6 +68,17 @@ st.write("Terlebih lagi, jika mengacu pada diagram batang di atas, dapat disimpu
 st.markdown("<h4 style='text-align: left;'>Langkah yang bisa diambil</h4>", unsafe_allow_html=True)
 st.write("Meskipun pada tahun 2020 prevalensi DM dan prevalensi TB di Pulau Jawa tidak berhubungan, tetapi alangkah baiknya jika masing-masing individu tidak terlena dengan kemudahan yang ditawarkan oleh kemajuan teknologi saat ini. Penting sekali untuk mengatur dan mengadaptasi pola hidup atau gaya hidup yang sehat, baik untuk penderita DM, penderita TB, penderita keduanya, maupun untuk yang sehat. Tidak hanya membuat tubuh jadi terasa lebih segar dan berat badan lebih terkontrol, mengadopsi gaya hidup sehat juga dapat meningkatkan imunitas tubuh sehingga tidak mudah terserang penyakit. Beberapa gaya hidup sehat yang dapat diterapkan menurut pakar kesehatan adalah seperti mengonsumsi air putih yang cukup untuk melindungi fungsi ginjal dan menghindari dehidrasi, rutin beraktivitas fisik atau berolahraga, menghindari makanan berlemak jahat dan mulai mengonsumsi sayur dan buah-buahan, menerapkan pola makan dengan gizi seimbang, menghindari kafein (di kopi, teh, dan soda), rutin meminum obat (bagi penderita DM maupun TB) sesuai dengan yang dianjurkan dokter, dan rutin melakukan pengecekan kadar gula darah secara berkala.")
 
+
+
+
+if st.sidebar.button('LinkedIn'):
+    js = "window.open('https://www.linkedin.com/in/primawidiani/')"  # New tab or window
+    js = "window.location.href = 'https://www.linkedin.com/in/primawidiani/'"  # Current tab
+    html = '<img src onerror="{}">'.format(js)
+    div = Div(text=html)
+    st.bokeh_chart(div)
+    
+    
 st.caption("Sumber:")
 st.caption("Bisnis.com. “Saran Pakar Gizi Buat Penderita Diabetes.” Edited by Yayuk Widiyarti, Tempo, TEMPO.CO, 11 Dec. 2019, https://gaya.tempo.co/read/1282451/saran-pakar-gizi-buat-penderita-diabetes.")
 st.caption("Imkasari, Pradanis Yanuarinda. “Pengaruh Imunitas Terhadap Penderita Diabetes Melitus.” Fakultas Keperawatan Universitas Airlangga, http://ners.unair.ac.id/site/index.php/news-fkp-unair/30-lihat/1026-pengaruh-imunitas-terhadap-penderita-diabetes-melitus.")
