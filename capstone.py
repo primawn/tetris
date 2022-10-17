@@ -21,7 +21,7 @@ map.show_maps(map.select_data, map.threshold(map.select_data))
 title = st.markdown("<h4 style='text-align: left;'>Prevalensi Diabetes Melitus dan TBC berdasarkan Provinsi</h4>", unsafe_allow_html=True)
 
 choice_prov = st.selectbox(
-    'title',
+    ,
     ('Semua Data', 'DKI Jakarta','Banten','DI Yogyakarta','Jawa Barat','Jawa Tengah','Jawa Timur'))
 
 if choice_prov == "Semua Data":
