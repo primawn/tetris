@@ -19,7 +19,7 @@ st.caption("(Opsi untuk memilih prevalensi TB/DM dapat dipilih di sidebar)")
 map.show_maps(map.select_data, map.threshold(map.select_data))
 
 
-st.markdown("<h4 style='text-align: left;'>Hubungan Prevalensi DM dan TBC di Pulau Jawa Tahun 2020</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: left;'>Hubungan Prevalensi DM dan TB di Pulau Jawa Tahun 2020</h4>", unsafe_allow_html=True)
 
 choice_prov = st.selectbox(
     'Data Penderita Diabetes Melitus dan TBC',
@@ -44,7 +44,7 @@ if choice_prov == "Semua Data":
          
 st.caption("(Data dihimpun dari website resmi Pemerintah Provinsi di pulau Jawa)")
 
-st.write("Seperti yang ditunjukkan pada tabel data prevalensi TB dan DM diatas, Jawa Barat mempunyai prevalensi DM tertinggi diantara Provinsi lain di Pulau Jawa dengan jumlah 1078857. Sementara itu, prevalensi TB tertinggi pada tahun 2020 di Pulau Jawa dimiliki oleh Jawa Tengah dengan jumlah 154062. Dari semua kabupaten/kota di Pulau Jawa pada tahun 2020, Provinsi Jawa Barat memiliki Kabupaten dan Kota yang memegang jumlah tertinggi baik pada prevalensi DM maupun TB. Kabupaten Bekasi mempunyai prevalensi DM tertinggi dengan jumlah 242169, sementara prevalensi TB tertinggi dimiliki oleh Kota Bogor dengan jumlah 10248.")
+st.write("Seperti yang ditunjukkan pada tabel data prevalensi TB dan DM diatas, Provinsi Jawa Barat mempunyai prevalensi DM tertinggi diantara Provinsi lain di Pulau Jawa dengan jumlah 1078857. Sementara itu, prevalensi TB tertinggi pada tahun 2020 di Pulau Jawa dimiliki oleh Provinsi Jawa Tengah dengan jumlah 154062. Dari semua Kabupaten/Kota di Pulau Jawa pada tahun 2020, Provinsi Jawa Barat memiliki Kabupaten dan Kota yang memegang jumlah tertinggi baik pada prevalensi DM maupun TB. Kabupaten Bekasi mempunyai prevalensi DM tertinggi dengan jumlah 242169, sementara prevalensi TB tertinggi dimiliki oleh Kota Bogor dengan jumlah 10248.")
 st.write("di Kota Sidoarjo, Provinsi Jawa Timur, terdapat 73559 orang penderita DM pada tahun 2020. Prevalensi DM yang jika dibandingkan dengan Kabupaten/Kota lain, contohnya Kota Mojokerto, merupakan angka yang lebih sedikit karena pada tahun 2020 Mojokerto mencapai prevalensi DM di angka 89200.")
 st.write("Jika melihat pada data prevalensi TB dan DM di tiap kabupaten/kota pada masing-masing Provinsi, tingginya prevalensi DM di suatu Kabupaten/Kota tidak selalu diiringi dengan tingginya prevalensi TB. Beberapa daerah yang menjadi daerah dengan angka prevalensi DM tertinggi belum tentu menjadi daerah yang mempunyai angka prevalensi TB yang tinggi juga.")
        
@@ -63,6 +63,7 @@ st.markdown("<h4 style='text-align: left;'>Langkah yang bisa diambil</h4>", unsa
 st.write("Meskipun pada tahun 2020 prevalensi DM dan prevalensi TB di Pulau Jawa tidak berhubungan, tetapi alangkah baiknya jika masing-masing individu tidak terlena dengan kemudahan yang ditawarkan oleh kemajuan teknologi saat ini. Penting sekali untuk mengatur dan mengadaptasi pola hidup atau gaya hidup yang sehat, baik untuk penderita DM, penderita TB, penderita keduanya, maupun untuk yang sehat. Tidak hanya membuat tubuh jadi terasa lebih segar dan berat badan lebih terkontrol, mengadopsi gaya hidup sehat juga dapat meningkatkan imunitas tubuh sehingga tidak mudah terserang penyakit. Beberapa gaya hidup sehat yang dapat diterapkan menurut pakar kesehatan adalah seperti mengonsumsi air putih yang cukup untuk melindungi fungsi ginjal dan menghindari dehidrasi, rutin beraktivitas fisik atau berolahraga, menghindari makanan berlemak jahat dan mulai mengonsumsi sayur dan buah-buahan, menerapkan pola makan dengan gizi seimbang, menghindari kafein (di kopi, teh, dan soda), rutin meminum obat (bagi penderita DM maupun TB) sesuai dengan yang dianjurkan dokter, dan rutin melakukan pengecekan kadar gula darah secara berkala.")
 
 st.caption("Sumber:")
+st.caption("Bisnis.com. “Saran Pakar Gizi Buat Penderita Diabetes.” Edited by Yayuk Widiyarti, Tempo, TEMPO.CO, 11 Dec. 2019, https://gaya.tempo.co/read/1282451/saran-pakar-gizi-buat-penderita-diabetes.")
 st.caption("Imkasari, Pradanis Yanuarinda. “Pengaruh Imunitas Terhadap Penderita Diabetes Melitus.” Fakultas Keperawatan Universitas Airlangga, http://ners.unair.ac.id/site/index.php/news-fkp-unair/30-lihat/1026-pengaruh-imunitas-terhadap-penderita-diabetes-melitus.")
 st.caption("“Penyakit Diabetes Melitus.” Direktorat P2PTM, Kementerian Kesehatan Republik Indonesia, http://p2ptm.kemkes.go.id/informasi-p2ptm/penyakit-diabetes-melitus.")
 st.caption("“Profil Kesehatan.” Dinas Kesehatan Provinsi DKI Jakarta, https://dinkes.jakarta.go.id/berita/profil/profil-kesehatan.")
