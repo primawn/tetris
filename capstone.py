@@ -18,7 +18,7 @@ st.write("Hidup yang menjadi lebih mudah di kemajuan teknologi ini membuat kita 
 st.write("Oleh karena itu, muncullah pertanyaan: jika prevalensi diabetes melitus di provinsi-provinsi Pulau Jawa pada 2020 dibandingkan satu sama lain dan dihubungkan dengan prevalensi TB paru, apakah angka yang didapat akan linear? Jika prevalensi DM di suatu daerah merupakan angka terbesar dibandingkan provinsi lain, apakah prevalensi TB di daerah tersebut juga mencapai angka tertinggi?")
 
 choice_prov = st.selectbox(
-    'Data Penderita Diabetes Melitus dan TBC berdasarkan Provinsi',
+    '<h5>Prevalensi Diabetes Melitus dan TBC berdasarkan Provinsi</h5>',
     ('Semua Data', 'DKI Jakarta','Banten','DI Yogyakarta','Jawa Barat','Jawa Tengah','Jawa Timur'))
 
 if choice_prov == "Semua Data":
