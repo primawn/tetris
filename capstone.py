@@ -65,4 +65,9 @@ st.write("Meskipun pada tahun 2020 prevalensi DM dan prevalensi TB di Pulau Jawa
 st.caption("Sumber:")
 st.caption("Imkasari, Pradanis Yanuarinda. “Pengaruh Imunitas Terhadap Penderita Diabetes Melitus.” Fakultas Keperawatan Universitas Airlangga, http://ners.unair.ac.id/site/index.php/news-fkp-unair/30-lihat/1026-pengaruh-imunitas-terhadap-penderita-diabetes-melitus.")
 st.caption("“Penyakit Diabetes Melitus.” Direktorat P2PTM, Kementerian Kesehatan Republik Indonesia, http://p2ptm.kemkes.go.id/informasi-p2ptm/penyakit-diabetes-melitus.")
-
+st.caption("“Profil Kesehatan.” Dinas Kesehatan Provinsi DKI Jakarta, https://dinkes.jakarta.go.id/berita/profil/profil-kesehatan.")
+st.caption("“Profil Kesehatan.” Dinas Kesehatan Provinsi Jawa Barat, https://diskes.jabarprov.go.id/informasipublik/profil.")
+st.caption("“Profil Kesehatan Banten Tahun 2020.” Dinas Kesehatan Provinsi Banten, https://dinkes.bantenprov.go.id/read/profil-kesehatan-provinsi-bant/198/Profil-Kesehatan-Provinsi-Banten-Tahun-2020.html.")
+st.caption("“Profil Kesehatan DI Yogyakarta Tahun 2020.” Dinas Kesehatan Daerah Istimewa Yogyakarta,https://dinkes.jogjaprov.go.id/download/download/113")
+st.caption("“Profil Kesehatan Provinsi Jawa Tengah 2020.” Badan Pusat Statistik Provinsi Jawa Tengah, https://jateng.bps.go.id/publication/2021/05/28/e645f5998de851c45f0c68c5/profil-kesehatan-provinsi-jawa-tengah-2020.html.")
+st.caption("“Profil Kesehatan Provinsi Jawa Timur 2020.” Dinas Kesehatan Provinsi Jawa Timur, https://dinkes.jatimprov.go.id/index.php?r=site/file_list&id_file=10&id_berita=8.")
