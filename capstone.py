@@ -13,7 +13,7 @@ st.markdown("<h6 style='text-align: center;'>Persebaran "+map.select_data+" di P
 
 # st.write("""Latar Belakang""")
 st.write("Hidup yang menjadi lebih mudah di kemajuan teknologi ini membuat kita seringkali menjadi lalai dalam menjaga gaya hidup dan pola makan. Menurut WHO, gaya hidup yang tidak baik tersebut merupakan salah satu pemicu diabetes melitus (Kemkes, 2018), yang mana sejauh ini penderita diabetes melitus semakin bertambah banyak.")
-st.caption("Diabetes melitus merupakan suatu penyakit yang menyebabkan gangguan metabolisme kronis pada tubuh (WHO, 1999). Hal ini menyebabkan tingginya kadar gula darah, terganggunya produksi insulin dalam tubuh, dan seringkali juga memberikan peluang bagi penyakit lain untuk masuk ke tubuh kita, salah satunya adalah TBC. Tuberkulosis (TBC/TB) adalah penyakit mudah menular yang disebabkan oleh infeksi bakteri, yang pada umumnya menyerang paru-paru.")
+
 
 chart_data = pd.DataFrame(
     data.datajawa,
@@ -24,7 +24,8 @@ chart_data = pd.DataFrame(
 st.bar_chart(chart_data)
 st.markdown("<h6 style='text-align: center;'>Jumlah Penderita Tuberkulosis dan Diabetes di Pulau Jawa</h6>", unsafe_allow_html=True)
 
-st.write("Bila dilihat pada diagram batang di atas, maka hubungan antara data penderita kedua penyakit tersebut adalah tidak berhubungan.")
+st.write("Diabetes melitus merupakan suatu penyakit yang menyebabkan gangguan metabolisme kronis pada tubuh (WHO, 1999). Hal ini menyebabkan tingginya kadar gula darah, terganggunya produksi insulin dalam tubuh, dan seringkali juga memberikan peluang bagi penyakit lain untuk masuk ke tubuh kita, salah satunya adalah TBC. Tuberkulosis (TBC/TB) adalah penyakit mudah menular yang disebabkan oleh infeksi bakteri, yang pada umumnya menyerang paru-paru.")
+st.write("Namun, jika mengacu pada diagram batang di atas, dapat dilihat bahwa ternyata data penderita kedua penyakit tersebut adalah tidak berhubungan.")
 st.write("Meskipun memiliki jumlah penderita Diabetes tertinggi, namun jumlah penderita Tuberkulosis di Jawa Barat masih lebih sedikit daripada di Jawa Tengah yang merupakan provinsi dengan jumlah penderita Tuberkulosis tertinggi di Pulau Jawa.")
 
 choice_prov = st.sidebar.selectbox(
