@@ -25,7 +25,8 @@ st.bar_chart(chart_data)
 st.markdown("<h6 style='text-align: center;'>Jumlah Penderita Tuberkulosis dan Diabetes di Pulau Jawa</h6>", unsafe_allow_html=True)
 
 st.write("Namun, jika mengacu pada diagram batang di atas, dapat dilihat bahwa ternyata data penderita kedua penyakit tersebut adalah tidak berhubungan.")
-st.write("Meskipun memiliki jumlah penderita Diabetes tertinggi, namun jumlah penderita Tuberkulosis di Jawa Barat masih lebih sedikit daripada di Jawa Tengah yang merupakan provinsi dengan jumlah penderita Tuberkulosis tertinggi di Pulau Jawa.")
+st.write("Tingginya angka penderita Diabetes tidak linear dengan angka penderita TB.")
+st.write("Meskipun jumlah penderita diabetes mencapai angka tertinggi diantara provinsi lain di Pulau Jawa, namun jumlah penderita TB di Jawa Barat masih lebih sedikit daripada di Jawa Tengah yang merupakan provinsi dengan jumlah penderita Tuberkulosis tertinggi di Pulau Jawa.")
 
 st.caption("Sumber:")
 st.caption("Imkasari, Pradanis Yanuarinda. “Pengaruh Imunitas Terhadap Penderita Diabetes Melitus.” Fakultas Keperawatan Universitas Airlangga, http://ners.unair.ac.id/site/index.php/news-fkp-unair/30-lihat/1026-pengaruh-imunitas-terhadap-penderita-diabetes-melitus.")
