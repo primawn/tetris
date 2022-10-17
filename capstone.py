@@ -6,8 +6,9 @@ import map
 #STREAMLIT
 #Create header
 st.markdown("<h1 style='text-align: center'>Hubungan Prevalensi Diabetes Melitus dengan Prevalensi TB Paru di Pulau Jawa Tahun 2020</h1>", unsafe_allow_html=True)
-st.write("<h4 style='text-align: center'>[Prima Widiani](https://www.linkedin.com/in/primawidiani/) | Tetris Program 2022</h4>", unsafe_allow_html=True)
 st.markdown("---")
+st.write("[Prima Widiani](https://www.linkedin.com/in/primawidiani/) | Tetris Program 2022")
+
 
 map.show_maps(map.select_data, map.threshold(map.select_data))
 st.markdown("<h6 style='text-align: center;'>Persebaran "+map.select_data+" di Pulau Jawa</h6>", unsafe_allow_html=True)
