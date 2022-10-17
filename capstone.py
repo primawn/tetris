@@ -22,10 +22,10 @@ map.show_maps(map.select_data, map.threshold(map.select_data))
 title = st.markdown("<h4 style='text-align: left;'>Hubungan Prevalensi DM dan TBC di Pulau Jawa Tahun 2020</h4>", unsafe_allow_html=True)
 
 choice_prov = st.selectbox(
-    'Data Penderita Diabetes Melitus dan TBC berdasarkan Provinsi',
+    'Data Penderita Diabetes Melitus dan TBC',
     ('Semua Data', 'DKI Jakarta','Banten','DI Yogyakarta','Jawa Barat','Jawa Tengah','Jawa Timur'))
 
-if choice_prov == "Semua Data":
+if choice_prov == "Per Provinsi":
          st.table(data.datajawa)
 if choice_prov == "DKI Jakarta":
          st.table(data.jkt_data)
@@ -39,11 +39,13 @@ if choice_prov == "Jawa Tengah":
          st.table(data.jateng_data)
 if choice_prov == "Jawa Timur":
          st.table(data.jatim_data)
+if choice_prov == "Semua Data":
+         st.table(data.jawa_data)
          
 st.caption("(Data dihimpun dari website resmi Pemerintah Provinsi di pulau Jawa)")
 
-st.write("Seperti yang ditunjukkan pada tabel data prevalensi TB dan DM di masing-masing Kabupaten/Kota per Provinsi diatas, di Kota Sidoarjo, Provinsi Jawa Timur, terdapat 73559 orang penderita DM pada tahun 2020. Prevalensi DM yang jika dibandingkan dengan Kabupaten/Kota lain, contohnya Kota Mojokerto, merupakan angka yang lebih sedikit karena pada tahun 2020 Mojokerto mencapai prevalensi DM di angka 89200.")
-st.write("Jika melihat pada data prevalensi TB dan DM di tiap kabupaten/kota pada masing-masing Provinsi, dapat disimpulkan bahwa dari data yang terlihat menunjukkan bahwa tingginya prevalensi DM di suatu kabupaten/kota tidak selalu diiringi dengan tingginya prevalensi TB. Beberapa daerah yang menjadi daerah dengan angka prevalensi DM tertinggi belum tentu menjadi daerah yang mempunyai angka prevalensi TB yang tinggi juga.")
+st.write("Seperti yang ditunjukkan pada tabel data prevalensi TB dan DM diatas, Jawa Barat mempunyai prevalensi DM tertinggi diantara Provinsi lain di Pulau Jawa. di Kota Sidoarjo, Provinsi Jawa Timur, terdapat 73559 orang penderita DM pada tahun 2020. Prevalensi DM yang jika dibandingkan dengan Kabupaten/Kota lain, contohnya Kota Mojokerto, merupakan angka yang lebih sedikit karena pada tahun 2020 Mojokerto mencapai prevalensi DM di angka 89200.")
+st.write("Jika melihat pada data prevalensi TB dan DM di tiap kabupaten/kota pada masing-masing Provinsi, tingginya prevalensi DM di suatu Kabupaten/Kota tidak selalu diiringi dengan tingginya prevalensi TB. Beberapa daerah yang menjadi daerah dengan angka prevalensi DM tertinggi belum tentu menjadi daerah yang mempunyai angka prevalensi TB yang tinggi juga.")
        
 chart_data = pd.DataFrame(
     data.datajawa,
