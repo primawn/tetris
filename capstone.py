@@ -69,7 +69,7 @@ st.write("Meskipun pada tahun 2020 prevalensi DM dan prevalensi TB di Pulau Jawa
 
 link = '[LinkedIn](https://www.linkedin.com/in/primawidiani/)'
 button = st.markdown(link, unsafe_allow_html=True)
-if st.sidebar.button('LinkedIn'): webbrowser.open_new_tab.(button)
+if st.sidebar.button('LinkedIn'): webbrowser.open_new_tab(button)
     
 st.caption("Sumber:")
 st.caption("Bisnis.com. “Saran Pakar Gizi Buat Penderita Diabetes.” Edited by Yayuk Widiyarti, Tempo, TEMPO.CO, 11 Dec. 2019, https://gaya.tempo.co/read/1282451/saran-pakar-gizi-buat-penderita-diabetes.")
