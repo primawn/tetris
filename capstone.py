@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import data
-from bokeh.models.widgets import Div
 import map
 
 #STREAMLIT
@@ -68,16 +67,8 @@ st.write("Terlebih lagi, jika mengacu pada diagram batang di atas, dapat disimpu
 st.markdown("<h4 style='text-align: left;'>Langkah yang bisa diambil</h4>", unsafe_allow_html=True)
 st.write("Meskipun pada tahun 2020 prevalensi DM dan prevalensi TB di Pulau Jawa tidak berhubungan, tetapi alangkah baiknya jika masing-masing individu tidak terlena dengan kemudahan yang ditawarkan oleh kemajuan teknologi saat ini. Penting sekali untuk mengatur dan mengadaptasi pola hidup atau gaya hidup yang sehat, baik untuk penderita DM, penderita TB, penderita keduanya, maupun untuk yang sehat. Tidak hanya membuat tubuh jadi terasa lebih segar dan berat badan lebih terkontrol, mengadopsi gaya hidup sehat juga dapat meningkatkan imunitas tubuh sehingga tidak mudah terserang penyakit. Beberapa gaya hidup sehat yang dapat diterapkan menurut pakar kesehatan adalah seperti mengonsumsi air putih yang cukup untuk melindungi fungsi ginjal dan menghindari dehidrasi, rutin beraktivitas fisik atau berolahraga, menghindari makanan berlemak jahat dan mulai mengonsumsi sayur dan buah-buahan, menerapkan pola makan dengan gizi seimbang, menghindari kafein (di kopi, teh, dan soda), rutin meminum obat (bagi penderita DM maupun TB) sesuai dengan yang dianjurkan dokter, dan rutin melakukan pengecekan kadar gula darah secara berkala.")
 
-
-
-
-if st.sidebar.button('LinkedIn'):
-    js = "window.open('https://www.linkedin.com/in/primawidiani/')"  # New tab or window
-    js = "window.location.href = 'https://www.linkedin.com/in/primawidiani/'"  # Current tab
-    html = '<img src onerror="{}">'.format(js)
-    div = Div(text=html)
-    st.bokeh_chart(div)
-    
+link = '[LinkedIn](https://www.linkedin.com/in/primawidiani/)'
+st.sidebar.markdown(link, unsafe_allow_html=True)
     
 st.caption("Sumber:")
 st.caption("Bisnis.com. “Saran Pakar Gizi Buat Penderita Diabetes.” Edited by Yayuk Widiyarti, Tempo, TEMPO.CO, 11 Dec. 2019, https://gaya.tempo.co/read/1282451/saran-pakar-gizi-buat-penderita-diabetes.")
