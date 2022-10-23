@@ -58,6 +58,13 @@ chart_data = pd.DataFrame(
     columns=["Penderita Tuberkulosis", "Penderita Diabetes"],
     index=data.datajawa['Provinsi']    
 )
+hide_jkt_data_row_index = """
+            <style>
+            .row_heading.level0 {display:none}
+            .blank {display:none}
+            </style>
+            """
+st.markdown(hide_jkt_data_row_index, unsafe_allow_html=True)
 
 st.bar_chart(chart_data)
 st.markdown("<h6 style='text-align: center;'>Jumlah Penderita Tuberkulosis dan Diabetes di Pulau Jawa</h6>", unsafe_allow_html=True)
